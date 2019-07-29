@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, rgb(0, 102, 204), rgb(0, 204, 204), rgb(0, 204, 153));
+  height: 100vh;
+}
+
+header {
+  background-color: black;
+  border-radius: 10px;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  color: white;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.keys {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 50%;
+  display: flex;
+}
+
+.key {
+  display: flex;
+  flex-direction: column-reverse;
+  width:10%;
+  font-size: 40px;
+  background-color: white;
+  color: black;
+  border: 4px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.sharp {
+  width: 6%;
+  height: 60%;
+  position: absolute;
+  background-color: black;
+  font-size: 30px;
+  color: white;
+  border:1px solid black;
+  z-index: 2;
+}
+
+.playing {
+  box-shadow: 0 0 15px rgb(191, 255, 0);
+  border-color: rgb(191, 255, 0);
+  transform: scale(0.95);
+  transition: all 0.2s linear;
+}
+
+.key[data-key='87'] {
+  left: 7%;
+}
+
+.key[data-key='69'] {
+  left: 17%;
+}
+
+.key[data-key='84'] {
+  left: 37%;
+}
+
+.key[data-key="89"] {
+  left: 47%;
+}
+
+.key[data-key="85"] {
+  left: 57%;    
+}
+
+.key[data-key="79"] {
+  left: 77%;    
+}
+
+.key[data-key="80"] {
+  left: 87%;    
+}
